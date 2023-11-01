@@ -3618,7 +3618,7 @@ body.landing #header {
 	max-width: 95%;
 	padding: 6em;
 	position: relative;
-	text-align: right;
+	text-align: center;
 	vertical-align: middle;
 	z-index: 1;
 }
@@ -3626,16 +3626,22 @@ body.landing #header {
 #banner .content header {
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 1em;
 }
 
 #banner .content header h2 {
-	font-size: 2.5em;
+	font-size: 6em;
 	margin: 0;
+	color: #fff;
+
+	text-shadow: 3px 3px 20px #a5a5a5,
+		-2px 1px 30px #a5a5a5;
 }
 
 #banner .content header p {
 	margin: 0.5em 0 0 0;
 	top: 0;
+	font-size: 1.5em;
 }
 
 #banner .content .image {
@@ -3991,7 +3997,15 @@ body.is-touch #banner {
 	}
 
 	#banner .content header h2 {
-		font-size: 1.5em;
+		font-size: 2.5em;
+		color: #fff;
+
+		text-shadow: 3px 3px 20px #a5a5a5,
+			-2px 1px 30px #a5a5a5;
+	}
+
+	#banner .content header p {
+		font-size: 1em;
 	}
 
 	#banner .content .image {
