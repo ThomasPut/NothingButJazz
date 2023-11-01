@@ -3885,6 +3885,15 @@ body.is-touch #banner {
 			-2px 1px 30px #a5a5a5;
 	}
 
+	#banner {
+		box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: calc(100vh - 44px);
+	}
+
+	#banner:before {
+		height: calc(100vh - 44px);
+	}
+
 	#banner .content .image {
 		margin: 0;
 	}
