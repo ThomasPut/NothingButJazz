@@ -3782,6 +3782,8 @@ body.is-touch #banner {
 		padding: 4.5em;
 	}
 
+
+
 	/* Footer */
 
 	#footer {
@@ -3873,6 +3875,14 @@ body.is-touch #banner {
 		display: block;
 		margin: 0 0 2em 0;
 		text-align: center;
+	}
+
+	#banner .content header h2 {
+		font-size: 2.5em;
+		color: #fff;
+
+		text-shadow: 3px 3px 20px #a5a5a5,
+			-2px 1px 30px #a5a5a5;
 	}
 
 	#banner .content .image {
