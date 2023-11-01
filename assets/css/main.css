@@ -257,6 +257,7 @@ h2 {
 	font-size: 2em;
 	line-height: 1.5em;
 	letter-spacing: -0.025em;
+	text-align: center;
 }
 
 h3 {
@@ -294,7 +295,7 @@ sup {
 hr {
 	border: 0;
 	border-bottom: solid 1px rgba(255, 255, 255, 0.3);
-	margin: 3em 0;
+	margin: 2em 0;
 }
 
 hr.major {
@@ -799,6 +800,8 @@ body.landing.is-preload:after {
 .row>* {
 	box-sizing: border-box;
 }
+
+
 
 .row.gtr-uniform>*> :last-child {
 	margin-bottom: 0;
@@ -1521,6 +1524,9 @@ body.landing.is-preload:after {
 }
 
 @media screen and (max-width: 980px) {
+	video {
+		width: 75%;
+	}
 
 	.row {
 		display: flex;
@@ -1766,6 +1772,9 @@ body.landing.is-preload:after {
 }
 
 @media screen and (max-width: 736px) {
+	video {
+		width: 100%;
+	}
 
 	.row {
 		display: flex;
@@ -2266,12 +2275,14 @@ header p {
 	color: #ffffff;
 	position: relative;
 	margin: 0 0 1.5em 0;
+	text-align: center;
 }
 
 header h2+p {
 	font-size: 1.25em;
 	margin-top: -1em;
 	line-height: 1.75em;
+
 }
 
 header h3+p {
