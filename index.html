@@ -153,30 +153,43 @@
 					<h2 id="contactus">Contact Us</h2>
 					<p>If you have a business inquiry please reach out to us!</p>
 				</header>
-				<form method="post" action="#" class="cta">
-					<div class="row gtr-uniform gtr-50">
-						<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email"
-								placeholder="Your Email Address" /></div>
-						<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" />
+				<form> <!--method="post" action="#"-->
+					<div class="fields">
+						<div class="field">
+							<label for="name" class="field">Name</label>
+							<input type="text" name="name" id="name" placeholder="Your name here" />
+						</div>
+						<div class="field">
+							<label for="email" class="field">Email</label>
+							<input type="email" name="email" id="email" placeholder="Your email here" />
+						</div>
+						<div class="field">
+							<label for="message" class="field">Message</label>
+							<textarea name="message" id="message" rows="4" placeholder="Your message here"></textarea>
 						</div>
 					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
 				</form>
 			</div>
-		</section>
+			</form>
+	</div>
+	</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.instagram.com/nothingbutjazzhollywood/" target="_blank"
-						class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Nothing But Jazz Records</li>
-			</ul>
-		</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/nothingbutjazzhollywood/" target="_blank"
+					class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Nothing But Jazz Records</li>
+		</ul>
+	</footer>
 
 	</div>
 
