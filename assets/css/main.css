@@ -3182,6 +3182,7 @@ input[type="button"]:disabled,
 .spotlight .image.main img {
 	position: relative;
 	object-fit: contain;
+	width: 100%;
 }
 
 .spotlight .content {
