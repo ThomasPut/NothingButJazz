@@ -3171,6 +3171,8 @@ input[type="button"]:disabled,
 }
 
 .spotlight:before {
+	background-image: url("images/overlay.png");
+	content: '';
 	display: block;
 	height: 100%;
 	left: 0;
@@ -3178,9 +3180,12 @@ input[type="button"]:disabled,
 	width: 100%;
 }
 
+.spotlight .image.main {
+	display: none;
+}
+
 .spotlight .image.main img {
 	position: relative;
-	width: 100%;
 }
 
 .spotlight .content {
