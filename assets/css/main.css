@@ -3176,12 +3176,10 @@ input[type="button"]:disabled,
 	left: 0;
 	top: 0;
 	width: 100%;
-	object-fit: contain;
 }
 
 .spotlight .image.main img {
 	position: relative;
-	object-fit: contain;
 	width: 100%;
 }
 
@@ -3267,9 +3265,6 @@ input[type="button"]:disabled,
 	border-color: #a97bc4;
 }
 
-.spotlight.inactive .content {
-	opacity: 0;
-}
 
 .spotlight.inactive .goto-next {
 	-moz-transform: translate(0, 1.5em);
