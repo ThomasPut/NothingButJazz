@@ -4327,3 +4327,55 @@ body.is-touch #banner {
 	padding-right: 1em;
 	width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+	.image.fit1 {
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+	.image.fit1 img {
+		width: 100%;
+
+	}
+
+	.columm {
+		max-width: 30%;
+		display: inline-block;
+		padding-right: 1em;
+		width: 100%;
+	}
+
+	.columm1 {
+		max-width: 30%;
+		display: inline-block;
+		padding-right: 1em;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.image.fit1 {
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+	.image.fit1 img {
+		width: 100%;
+
+	}
+
+	.columm {
+		max-width: 30%;
+		display: inline-block;
+		padding-right: 1em;
+		width: 100%;
+	}
+
+	.columm1 {
+		max-width: 30%;
+		display: inline-block;
+		padding-right: 1em;
+		width: 100%;
+	}
+}
