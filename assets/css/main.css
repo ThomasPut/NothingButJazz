@@ -4315,9 +4315,9 @@ body.is-touch #banner {
 }
 
 .columm {
-	max-width: 40%;
+	max-width: 30%;
 	display: inline-block;
-	padding-right: 3em;
+	padding-right: 2em;
 	width: 100%;
 }
 
