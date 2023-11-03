@@ -4339,10 +4339,19 @@ body.is-touch #banner {
 }
 
 .columm1 {
-	max-width: 100%;
+	max-width: 30%;
 	display: inline-block;
 	padding-right: 1em;
 	width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+
+	.columm1:hover {
+		transform: scale(1.5);
+		transition: transform 0.3s ease;
+		overflow: hidden;
+	}
 }
 
 .centerpls {
