@@ -2825,6 +2825,26 @@ ul.actions.fit.stacked {
 	width: 100%;
 }
 
+ul.actions.fit1 li {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	width: 100%;
+}
+
+ul.actions.fit1li>* {
+	width: 100%;
+}
+
+ul.actions.fit1.stacked {
+	width: 100%;
+}
+
 @media screen and (max-width: 480px) {
 
 	ul.actions:not(.fixed) {
@@ -4310,9 +4330,6 @@ body.is-touch #banner {
 	margin: 0;
 }
 
-#rightpls {
-	float: right;
-}
 
 .columm {
 	max-width: 30%;
@@ -4326,4 +4343,8 @@ body.is-touch #banner {
 	display: inline-block;
 	padding-right: 1em;
 	width: 100%;
+}
+
+.centerpls {
+	text-align: center;
 }
