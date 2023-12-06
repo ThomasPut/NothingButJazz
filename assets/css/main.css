@@ -3529,7 +3529,7 @@ body.landing .dropotron.level-0 {
 }
 
 #header {
-	background-color: rgba(0, 0, 0, 0.965);
+	background-color: #272833;
 	box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 	cursor: default;
 	height: 3.5em;
@@ -3601,7 +3601,7 @@ body.landing #page-wrapper {
 }
 
 body.landing #header {
-	background: #0F1015;
+	background: #272833;
 	box-shadow: none;
 	position: fixed;
 }
@@ -3630,13 +3630,8 @@ body.landing #header {
 }
 
 #banner:after {
-	background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
-	;
+
 	background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
-	;
-	background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
-	;
-	background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
 	;
 	content: '';
 	display: block;
@@ -4351,6 +4346,7 @@ body.is-touch #banner {
 		transform: scale(1.5);
 		transition: transform 0.3s ease;
 		overflow: hidden;
+		z-index: 10;
 	}
 }
 
