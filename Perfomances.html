@@ -1,115 +1,239 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our Performances</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      .video-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
 
-<html>
+      .video-container {
+        max-width: 600px;
+        width: 100%;
+      }
 
-<head>
-	<title>Our Performances</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-</head>
+      .video-container h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
 
-<body class="is-preload">
-	<div id="page-wrapper">
+      .video-container video {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
 
-		<!-- Header -->
-		<header id="header">
-			<h1 id="logo"><a href="index.html">NBJ Records</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li>
-						<a href="#">About Us</a>
-						<ul>
-							<li><a href="Perfomances.html">Performances</a></li>
-							<li><a href="Shows.html">Upcoming Shows</a></li>
-							<li><a href="Musicians.html"> Musicians</a></li>
-						</ul>
-					</li>
-					<li><a href="index.html#contactus" class="button primary">Contact Us</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!-- Main -->
-		<div id="main" class="wrapper style1">
-			<div class="container">
-				<header class="major">
-					<h2>Our Performances</h2>
-					<p>At Nothing But Jazz, our meticulous team orchestrates immersive
-						events, breathing life
-						into the vibrant world of Jazz, </br>ensuring unforgettable experiences.</p>
-				</header>
-				<!-- Content -->
-				<section id="content">
-					<hr />
+      /* Vertical preview effect only for session 3 */
+      .video-container.vertical-preview video {
+        height: 340px;
+        object-fit: cover;
+        cursor: pointer;
+      }
 
-					<h3>Ice Gonzalez Quintet live at 1212, Santa Monica</h3>
-					<center>
-						<video controls="controls" width="50%" height="50%" poster="images\download (2).png">
-							<source src="images\VIDEO-2023-10-31-18-45-23.mp4" type="video/mp4">
-						</video>
-					</center>
+      .video-container.vertical-preview video:hover,
+      .video-container.vertical-preview video:focus {
+        height: 600px;
+        object-fit: contain;
+      }
 
-					<hr />
+      section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 3rem;
+        font-weight: 700;
+      }
 
-					<h3>Ice Gonzalez Collective live at the Sunset Room, Hollywood</h3>
-					<center>
-						<video controls="controls" width="50%" height="50%" poster="images\download (1).png">
-							<source src="images\VIDEO-2023-10-31-18-44-35 (1).mp4" type="video/mp4">
-						</video>
-					</center>
-				</section>
-				<hr />
+      footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: #f0f0f0;
+        margin-top: 3rem;
+      }
 
-				<h3>Additional Performances</h3>
-				<center>
-					<div>
-						<video controls="controls" width="50%" poster="images\video-capture-1.87seg-4507.png">
-							<source src="images\3c83b88c-cd8a-40f9-9edf-e40ad413ddd1 (1).mp4" type="video/mp4">
-						</video>
-					</div>
-					<div>
-						<video controls="controls" width="50%" poster="images\video-capture-3.65seg-9289.png">
-							<source src="images\IMG_3057 (1).mp4" type="video/mp4">
-						</video>
-					</div>
-				</center>
-				</section>
-				<hr />
-			</div>
-		</div>
-	</div>
-	</div>
+      footer ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
 
-	<!-- Footer -->
-	<footer id="footer">
-		<ul class="icons">
-			<li><a href="#" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-			<li><a href="https://www.instagram.com/nothingbutjazzhollywood/" target="_blank"
-					class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon brands alt fa-tiktok"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-		</ul>
-		<ul class="copyright">
-			<li>&copy; Nothing But Jazz Records</li>
-		</ul>
-	</footer>
+      footer a {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
+  </head>
 
-	</div>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <header id="header">
+        <h1 id="logo"><a href="index.html">NBJ Records</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#">About Us</a>
+              <ul>
+                <li><a href="Performances.html">Performances</a></li>
+                <li><a href="Shows.html">Upcoming Shows</a></li>
+                <li><a href="Musicians.html">Musicians</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="index.html#contactus" class="button primary"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+      <div id="main" class="wrapper style1">
+        <div class="container">
+          <header class="major">
+            <h2>Our Performances</h2>
+            <p>
+              At Nothing But Jazz, our meticulous team orchestrates immersive
+              events,<br />
+              breathing life into the vibrant world of Jazz, ensuring
+              unforgettable experiences.
+            </p>
+          </header>
 
-</body>
+          <!-- Most Recent Performances -->
+          <section>
+            <h2>Most Recent Performances</h2>
+            <div class="video-grid">
+              <div class="video-container">
+                <video controls>
+                  <source
+                    src="images/534104d012dd48fcb17b506a47cecc4e.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
 
+              <div class="video-container vertical-preview">
+                <video controls tabindex="0">
+                  <source
+                    src="images/4d00d95772bd44ee8fa2fc4661693fe8.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </section>
+
+          <!-- Featured Performances -->
+          <section>
+            <h2>Featured Performances</h2>
+            <div class="video-grid">
+              <div class="video-container">
+                <h3>Ice Gonzalez Quintet — Live at 1212, Santa Monica</h3>
+                <video controls poster="images/download (2).png">
+                  <source
+                    src="images/VIDEO-2023-10-31-18-45-23.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+
+              <div class="video-container">
+                <h3>Ice Gonzalez Collective — Sunset Room, Hollywood</h3>
+                <video controls poster="images/download (1).png">
+                  <source
+                    src="images/VIDEO-2023-10-31-18-44-35 (1).mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </section>
+
+          <!-- Additional Performances -->
+          <section>
+            <h2>Additional Performances</h2>
+            <div class="video-grid">
+              <!-- Session 1: Now with vertical preview hover effect -->
+              <div class="video-container vertical-preview">
+                <video controls tabindex="0">
+                  <source
+                    src="images/b1c7019737d84a87acd7a98a1a756b7c.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+
+              <div class="video-container">
+                <video controls poster="images/video-capture-1.87seg-4507.png">
+                  <source
+                    src="images/3c83b88c-cd8a-40f9-9edf-e40ad413ddd1 (1).mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+
+              <div class="video-container">
+                <video controls poster="images/video-capture-3.65seg-9289.png">
+                  <source src="images/IMG_3057 (1).mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands alt fa-youtube"
+              ><span class="label">YouTube</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/nothingbutjazzhollywood/"
+              target="_blank"
+              class="icon brands alt fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-tiktok"
+              ><span class="label">TikTok</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands alt fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Nothing But Jazz Records</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
